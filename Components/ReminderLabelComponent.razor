@@ -1,0 +1,41 @@
+﻿@if (ChildContent is null)
+{
+    <div style="font-size: 30px;">
+        <div>
+            @Section
+        </div>
+        @if (DataContext!.CurrentDateText != "")
+        {
+            <div style="color: blue;">
+                @DataContext.CurrentDateText
+            </div>
+        }
+        <div style="color: red;">
+            @DataContext.NextDayText
+        </div>
+    </div>
+    return;
+}
+<LeftOverLayout>
+    <TopContent>
+        <div style="font-size: 30px;">
+            <div>
+                @Section
+            </div>
+            @if (DataContext!.CurrentDateText != "")
+            {
+                <div style="color: blue;">
+                    @DataContext.CurrentDateText
+                </div>
+            }
+            <div style="color: red;">
+                @DataContext.NextDayText
+            </div>
+        </div>
+    </TopContent>
+    <MainContent>
+        <div style="margin-bottom: 20px; font-size: 20px; font-weight: bold; overflow: auto; height: 100%;">
+            @ChildContent
+        </div>
+    </MainContent>
+</LeftOverLayout>

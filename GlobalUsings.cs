@@ -1,0 +1,10 @@
+﻿global using Reminders.CoreLibrary.Logic;
+global using CommonBasicLibraries.BasicDataSettingsAndProcesses;
+global using Reminders.CoreLibrary.Models;
+global using Microsoft.AspNetCore.Components;
+global using Reminders.BlazorCoreLibrary.ViewModels;
+global using Reminders.CoreLibrary.MiscClasses;
+global using BasicBlazorLibrary.Components.MediaQueries.ParentClasses;
+global using Reminders.BlazorCoreLibrary.Helpers;
+global using Reminders.CoreLibrary.Interfaces;
+global using System.Diagnostics.CodeAnalysis;
